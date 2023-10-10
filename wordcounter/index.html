@@ -1,1 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Word Count </h1>
+    <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+    <button onclick="countWords()">Count Words</button>
+    <p>Total words: <span id="wordCount">0</span></p>
 
+    <script>
+        function countWords() {
+            const inputText = document.getElementById('inputText').value;
+            const words = inputText.trim();
+            const wordCount = words.length;
+            document.getElementById('wordCount').textContent = wordCount;
+        }
+    </script>
+</body>
+</html>
