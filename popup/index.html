@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="button1">Button 1</button>
+    <button id="button2">Button 2</button>
+    <button id="button3">Button 3</button>
 
+   
+    <div id="popup" class="popup-container">
+        <span class="close-button" onclick="closePopup('popup')">&times;</span>
+        <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum porro obcaecati quidem quaerat? Commodi, soluta esse corporis doloremque ducimus ut cumque nihil, voluptas unde</div>
+    </div>
+
+    <script>
+           function closePopup(popupId) {
+            document.getElementById(popupId).style.display = "none";
+        }
+        
+        document.getElementById("button1").addEventListener("click", function() {
+            document.getElementById("popup").style.display = "block";
+        });
+
+        document.getElementById("button2").addEventListener("click", function() {
+            document.getElementById("popup").style.display = "block";
+        });
+
+        document.getElementById("button3").addEventListener("click", function() {
+            document.getElementById("popup").style.display = "block";
+        });
+    </script>
+</body>
+</html>
